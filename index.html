@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300&family=Roboto&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./tailwind.css" />
+        <link rel="stylesheet" href="index.css" />
+        <title>Festival Etoiles et Toiles - Films de Plein Air</title>
+    </head>
+    <body>
+        <header>
+            <nav class="fixed top-0 z-50 flex justify-end w-screen p-6 lg:w-full bg-primary bg-opacity-90">
+                <div class="items-center hidden w-auto pt-4 font-roboto lg:flex">
+                    <a class="block mr-10 text-tertiary hover:text-gray-400" href="#">Accueil</a>
+                    <a class="block mr-10 text-white hover:text-gray-400" href="films.html">A l'affiche</a>
+                    <a class="block mr-10 text-white hover:text-gray-400" href="news.html">Actualités</a>
+                    <a class="block mr-10 text-white hover:text-gray-400" href="calendar.html">Calendrier</a>
+                    <a class="block mr-10 text-white hover:text-gray-400" href="contact.html">Contact</a>
+                </div>
+                <div class="flex items-center justify-between w-full pt-4 text-white lg:hidden">
+                    <div class="">
+                        <h1 class="text-lg font-bold font-courgette">Festival Etoiles et Toiles</h1>
+                        <h2>Festival de films de plein air</h2>
+                    </div>
+                    <div class="block ">
+                        <button class="flex items-center px-4 py-3 border rounded text-fourth border-fourth focus:outline-none">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="w-screen pt-40 bg-primary">
+            <section id="hero-section" class="max-w-6xl mx-auto mb-12 text-white lg:p-6">
+                <div class="flex flex-col justify-between lg:flex-row">
+                    <div id="hero" class="flex flex-col justify-center w-full bg-no-repeat bg-cover lg:justify-start lg:-mt-16 lg:w-1/2 lg:pr-10 bg-tontons lg:bg-none h-96">
+                        <h1 class="hidden mb-2 text-4xl text-white lg:text-6xl sm:mb-1 font-courgette lg:block">Etoiles et Toiles</h1>
+                        <h2 class="hidden mb-40 text-3xl text-white sm:mb-10 md:text-xl font-quicksand sm:text-lg lg:block">Festival de films de plein air</h2>
+                        <p class="hidden mb-8 text-md lg:text-lg lg:block">
+                            Du 5 au 8 août 2021, retrouvez-nous chaque soir au Parc Monceau à Paris pour découvrir notre sélection de films d'auteur. Pour la première édition de ce festival, l'association des Films de Plein Air vous offre
+                            une manifestation culturelle entièrement gratuite, il suffit simplement de vous inscrire ici pour réserver vos places. Bonne séance !
+                        </p>
+                        <div class="flex justify-center lg:justify-start">
+                            <button type="submit" class="px-12 py-3 mr-5 text-white rounded-md shadow-md text-md w-max lg:w-full bg-tertiary hover:bg-orange-400">Télécharger le programme PDF</button>
+                        </div>
+                    </div>
+                    <div id="booking-form" class="flex justify-center w-full mt-5 lg:w-1/2 lg:justify-end">
+                        <div class="flex-auto max-w-sm p-10 pb-20 bg-white shadow-md">
+                            <div class="w-full">
+                                <div class="h-6 mt-3 text-xs font-bold leading-8 text-gray-600 uppercase">Nom <span class="mr-1 text-red-400">*</span></div>
+                                <div class="flex p-1 my-2 bg-white border border-gray-200 rounded">
+                                    <input placeholder="Votre prénom" class="w-full p-1 px-2 text-gray-800 outline-none appearance-none" />
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <div class="h-6 mt-3 text-xs font-bold leading-8 text-gray-600 uppercase">Prénom <span class="mr-1 text-red-400">*</span></div>
+                                <div class="flex p-1 my-2 bg-white border border-gray-200 rounded">
+                                    <input placeholder="Votre nom" class="w-full p-1 px-2 text-gray-800 outline-none appearance-none" />
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <div class="h-6 mt-3 text-xs font-bold leading-8 text-gray-600 uppercase">Email <span class="mr-1 text-red-400">*</span></div>
+                                <div class="flex p-1 my-2 bg-white border border-gray-200 rounded">
+                                    <input placeholder="votre@email.com" class="w-full p-1 px-2 text-gray-800 outline-none appearance-none" />
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <div class="h-6 mt-3 text-xs font-bold leading-8 text-gray-600 uppercase">Film <span class="mr-1 text-red-400">*</span></div>
+                                <div class="flex p-1 my-2 bg-white">
+                                    <select name="film-picker" id="film-picker" class="w-full text-gray-600 border-gray-200 form-select focus:ring-transparent focus:border-gray-200">
+                                        <option value="0">Film 0</option>
+                                        <option value="0">Film 0</option>
+                                        <option value="0">Film 0</option>
+                                        <option value="0">Film 0</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="relative mt-6">
+                                <div class="absolute w-full px-4 py-2 text-lg font-medium text-center text-white rounded shadow-md cursor-pointer bg-secondary hover:bg-red-500 tr-mt">
+                                    Réserver
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="now-on" class="w-full pt-12 bg-white max-w-12xl">
+                <div class="flex justify-center mb-24">
+                    <h3 class="text-4xl text-black font-courgette">Films à l'affiche</h3>
+                </div>
+                <div class="grid-rows-3 mx-12 my-12 md:grid md:grid-cols-4">
+                    <article class="max-w-3xl col-span-4 mx-auto md:col-span-2 md:grid md:grid-cols-2 md:justify-items-stretch md:row-span-2">
+                        <div class="mr-6">
+                            <img src="assets/images/film_echo.jpg" alt="affiche du film Echo" class="pb-4" />
+                        </div>
+                        <div>
+                            <div class="w-full pt-1 md:place-items-center md:grid-flow-row">
+                                <div class="grid ml-4 gap-x-12 justify-items-start md:h-1/3">
+                                    <div class="mt-3 md:-ml-8 md:h-1/3 w-max">
+                                        <h4 class="font-bold">Echo - <span>Rúnar Rúnarsson</span></h4>
+                                        <p>5 août 2021<span> @ 19h</span></p>
+                                    </div>
+                                </div>
+                                <p class="pr-8 mx-4 mb-6 text-justify md:mx-auto">
+                                    En Islande, alors que tout le monde se prépare pour les fêtes de Noël, une ambiance particulière s'empare du pays. Entre exaltation et inquiétude, Echo dresse un portrait mordant et tendre de notre
+                                    société moderne.
+                                </p>
+								<button type="button" class="w-5/6 h-10 mt-4 text-lg text-white rounded-md md:h-max md:w-full md:my-2 md:py-2 md:px-6 bg-secondary hover:bg-red-200">Réserver ma place</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="hidden max-w-3xl col-span-2 col-start-3 row-span-2 row-start-2 mx-auto md:grid md:grid-cols-2 md:justify-items-stretch">
+                        <div class="">
+                            <div class="w-full pt-1 mt-20">
+                                <div class="flex justify-end">
+                                    <div class="mt-3 w-max">
+                                        <h4 class="font-bold">Kajillionaire - <span>Miranda July</span></h4>
+                                        <p>5 août 2021<span> @ 21h</span></p>
+                                    </div>
+                                </div>
+                                <p class="mb-6 text-justify">
+                                    Theresa et Robert ont passé 26 ans à former leur fille unique, Old Dolio, à escroquer, arnaquer et voler à chaque occasion. Au cours d'un cambriolage conçu à la hâte, ils proposent à une jolie inconnue
+                                    ingénue, Mélanie, de les rejoindre, bouleversant complètement la routine d'Old Dolio.
+                                </p>
+                                <div class="flex justify-end">
+                                    <button class="px-6 py-2 my-2 text-lg text-white rounded-md bg-secondary hover:bg-red-200">Réserver ma place</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ml-6">
+                            <img src="assets/images/film_kajillionaire.jpg" alt="affiche de film" class="pb-4" />
+                        </div>
+                    </article>
+                </div>
+                <div class="flex justify-center">
+                    <button class="px-12 py-3 mr-5 text-lg text-white rounded-md shadow-md bg-primary hover:bg-blue-900"><a href="#">Voir tous les films</a></button>
+                </div>
+            </section>
+            <section id="banner" class="w-full pt-12 bg-white max-w-12xl">
+                <div class="object-fill h-auto px-10 py-24 text-white bg-fixed bg-center bg-cover" style="background-image: url(assets/images/outdoorcinema.jpg);">
+                    <div class="grid w-full grid-cols-1 place-items-center">
+                        <h2 class="my-6 text-6xl font-bold">Toutes les séances sont gratuites !</h2>
+                        <p class="mb-10 text-3xl leading-none">Pensez simplement à réserver vos billets !</p>
+                    </div>
+                </div>
+            </section>
+            <section id="association" class="pb-12 bg-beige">
+                <div class="grid w-full grid-cols-2 pt-12 pl-6 pr-6 text-white">
+                    <div class="px-12">
+                        <h4 class="pb-12 font-bold lg:text-5xl">Association Films de Plein Air</h4>
+                        <p class="pb-12 text-justify text-gray-400">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias optio quasi nulla earum consequuntur illo expedita culpa officiis quia eaque sit excepturi reprehenderit quisquam eligendi vitae, cupiditate
+                            ipsa accusantium illum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias optio quasi nulla earum consequuntur illo expedita culpa officiis quia eaque sit excepturi reprehenderit quisquam
+                            eligendi vitae, cupiditate ipsa accusantium illum.
+                        </p>
+                        <a href="#"><button class="px-12 py-3 mr-5 text-lg text-white rounded-md shadow-md bg-primary hover:bg-blue-900">En savoir plus</button></a>
+                    </div>
+                    <div class="grid grid-cols-1 justify-items-center">
+                        <div class="w-4/6">
+                            <img src="assets/images/cinema_etoiles.jpg" alt="" class="mb-6" />
+                        </div>
+                        <div class="flex justify-between w-24 pb-2 mx-auto">
+                            <button class="w-4 pb-2 rounded-full bg-primary"></button>
+                            <button class="w-4 p-2 bg-blue-300 rounded-full"></button>
+                            <button class="w-4 p-2 bg-blue-300 rounded-full"></button>
+                            <button class="w-4 p-2 bg-blue-300 rounded-full"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="news" class="w-full pt-12 bg-white max-w-12xl">
+                <div class="flex justify-center w-full justify-items-center">
+                    <h2 class="text-4xl font-bold font-courgette">Actualités</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+                    <div class="w-4/5 px-10 py-6 mx-auto my-4 bg-white rounded shadow-xl ">
+                        <div class="pb-10">
+                            <img src="assets/images/cinema_exterieur.jpg" alt="" class="w-full max-h-64" />
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="font-light text-gray-600">28 mars 2021</span>
+                            <a class="px-2 py-1 font-bold text-gray-100 rounded bg-fourth hover:bg-gray-500" href="#">Annonce</a>
+                        </div>
+                        <div class="mt-2">
+                            <a class="text-2xl font-bold text-gray-700 hover:text-gray-600" href="#">
+                                Lorem ipsum dolor sit amet
+                            </a>
+                            <p class="mt-2 text-gray-600">
+                                Ille enim occurrentia nescio quae comminiscebatur; Eadem nunc mea adversum te oratio est. Sit sane ista voluptas. Omnes enim iucundum motum, quo sensus hilaretur.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-between mt-4">
+                            <a class="text-blue-600 hover:underline" href="#">Lire l'article</a>
+                        </div>
+                    </div>
+                    <div class="w-4/5 px-10 py-6 mx-auto my-4 bg-white rounded shadow-xl">
+                        <div class="pb-10">
+                            <img src="assets/images/appareil_photo.jpg" alt="" class="w-full h-full max-h-64" />
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="font-light text-gray-600">28 mars 2021</span>
+                            <a class="px-2 py-1 font-bold text-gray-100 rounded bg-fourth hover:bg-gray-500" href="#">Annonce</a>
+                        </div>
+                        <div class="mt-2">
+                            <a class="text-2xl font-bold text-gray-700 hover:text-gray-600" href="#">
+                                Lorem ipsum dolor sit amet
+                            </a>
+                            <p class="mt-2 text-gray-600">
+                                Ille enim occurrentia nescio quae comminiscebatur; Eadem nunc mea adversum te oratio est. Sit sane ista voluptas. Omnes enim iucundum motum, quo sensus hilaretur.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-between mt-4">
+                            <a class="text-blue-600 hover:underline" href="#">Lire l'article</a>
+                        </div>
+                    </div>
+                    <div class="w-4/5 px-10 py-6 mx-auto my-4 bg-white rounded shadow-xl">
+                        <div class="pb-10">
+                            <img src="assets/images/popcorn.jpg" alt="" class="w-full max-h-64" />
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="font-light text-gray-600">28 mars 2021</span>
+                            <a class="px-2 py-1 font-bold text-gray-100 rounded bg-fourth hover:bg-gray-500" href="#">Annonce</a>
+                        </div>
+                        <div class="mt-2">
+                            <a class="text-2xl font-bold text-gray-700 hover:text-gray-600" href="#">
+                                Lorem ipsum dolor sit amet
+                            </a>
+                            <p class="mt-2 text-gray-600">
+                                Ille enim occurrentia nescio quae comminiscebatur; Eadem nunc mea adversum te oratio est. Sit sane ista voluptas. Omnes enim iucundum motum, quo sensus hilaretur.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-between mt-4">
+                            <a class="text-blue-600 hover:underline" href="#">Lire l'article</a>
+                        </div>
+                    </div>
+                    <div class="w-4/5 px-10 py-6 mx-auto my-4 bg-white rounded shadow-xl">
+                        <div class="pb-10">
+                            <img src="assets/images/popcorn.jpg" alt="" class="w-full max-h-64" />
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="font-light text-gray-600">28 mars 2021</span>
+                            <a class="px-2 py-1 font-bold text-gray-100 rounded bg-fourth hover:bg-gray-500" href="#">Annonce</a>
+                        </div>
+                        <div class="mt-2">
+                            <a class="text-2xl font-bold text-gray-700 hover:text-gray-600" href="#">
+                                Lorem ipsum dolor sit amet
+                            </a>
+                            <p class="mt-2 text-gray-600">
+                                Ille enim occurrentia nescio quae comminiscebatur; Eadem nunc mea adversum te oratio est. Sit sane ista voluptas. Omnes enim iucundum motum, quo sensus hilaretur.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-between mt-4">
+                            <a class="text-blue-600 hover:underline" href="#">Lire l'article</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="location" class="w-full pt-12 bg-white max-w-12xl">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="grid grid-cols-1 pt-12 justify-items-center">
+                        <h6 class="pb-12 text-4xl font-bold font-courgette">Parc Monceau</h6>
+                        <img class="w-2/3" src="assets/images/parc_monceau.jpg" alt="" />
+                    </div>
+                    <div class="grid w-full grid-cols-1 pt-12 pr-6 mx-auto justify-items-center">
+                        <p class="pb-12 pl-12 pr-12 text-justify max-w-48">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis mollitia tempora deleniti eveniet doloremque incidunt soluta ullam error voluptatum est voluptatem perspiciatis, dicta dolores quo cumque natus
+                            velit facere hic.
+                        </p>
+                        <div class="mapouter  max-w-xs mb-12 ml-6 bg-lime-400">
+                            <div class="gmap_canvas overflow-hidden h-5/6">
+                                <iframe  class="h-5/6" src="https://maps.google.com/maps?q=parc%20monceau&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="w-full pt-12 pb-12 bg-white max-w-12xl">
+                <div class="grid grid-cols-1 py-12 mb-12 justify-items-center">
+                    <h2 class="text-4xl font-bold font-courgette">Nous contacter</h2>
+                    <div class="mt-8 lg:w-1/3">
+                        <div class="grid grid-cols-1 gap-6">
+                            <label class="block">
+                                <span class="text-gray-700">Nom </span><span class="mr-1 text-red-400">*</span>
+                                <input type="text" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="Votre nom" />
+                            </label>
+                            <label class="block">
+                                <span class="text-gray-700">Prénom </span><span class="mr-1 text-red-400">*</span>
+                                <input type="text" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="Votre prénom" />
+                            </label>
+                            <label class="block">
+                                <span class="text-gray-700">Adresse email </span><span class="mr-1 text-red-400">*</span>
+                                <input type="email" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="votre@email.com" />
+                            </label>
+                            <label class="block">
+                                <span class="text-gray-700">Votre message </span><span class="mr-1 text-red-400">*</span>
+                                <textarea class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" rows="3"></textarea>
+                            </label>
+                            <div class="block">
+                                <div class="mt-2">
+                                    <div>
+                                        <label class="inline-flex items-center">
+                                            <input type="checkbox" class="text-indigo-600 border-gray-300 rounded shadow-sm focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50" checked />
+                                            <span class="ml-2">M'abonner à la newsletter</span>
+                                        </label>
+                                        <div class="relative mt-6">
+                                            <div class="absolute w-full px-4 py-2 text-lg font-medium text-center text-white rounded shadow-md cursor-pointer bg-secondary hover:bg-red-500 tr-mt">
+                                                Envoyer
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="text-white bg-primary">
+            <div id="footer-top" class="container p-8 mx-auto bg-grey-lighter">
+                <div class="mb-4 sm:flex">
+                    <div class="h-auto sm:w-1/4">
+                        <div class="mb-2 text-2xl font-bold cursor-pointer">
+                            Films
+                        </div>
+                        <ul class="leading-normal list-reset">
+                            <li class="cursor-pointer hover:text-fourth"><a href="film.html">Chat Noir Chat Blanc</a></li>
+                            <li class="cursor-pointer hover:text-fourth">Merveilles à Montfermeil</li>
+                            <li class="cursor-pointer hover:text-fourth">Hotel By the River</li>
+                            <li class="cursor-pointer hover:text-fourth">Les héros ne meurent jamais</li>
+                        </ul>
+                    </div>
+                    <div class="h-auto sm:w-1/4">
+                        <div class="mb-2 text-2xl font-bold cursor-pointer">
+                            <a href="news.html">Actualités</a>
+                        </div>
+                        <ul class="leading-normal list-reset">
+                            <li class="cursor-pointer hover:text-fourth">Actu 1</li>
+                            <li class="cursor-pointer hover:text-fourth">Actu 2</li>
+                            <li class="cursor-pointer hover:text-fourth">Actu 3</li>
+                            <li class="cursor-pointer hover:text-fourth">Actu 4</li>
+                        </ul>
+                    </div>
+                    <div class="h-auto sm:w-1/4">
+                        <div class="mb-2 text-2xl font-bold cursor-pointer">
+                            Le festival
+                        </div>
+                        <ul class="leading-normal list-reset">
+                            <li class="cursor-pointer hover:text-fourth">Réserver</li>
+                            <li class="cursor-pointer hover:text-fourth">Lieu</li>
+                            <li class="cursor-pointer hover:text-fourth"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="h-auto mt-8 sm:w-1/4 sm:mt-0">
+                        <div class="mb-2 text-2xl font-bold cursor-pointer">
+                            L'association
+                        </div>
+                        <ul class="leading-normal list-reset">
+                            <li class="cursor-pointer hover:text-fourth">Politique de confidentialité</li>
+                            <li class="cursor-pointer hover:text-fourth">Mentions légales</li>
+                            <li class="cursor-pointer hover:text-fourth">CGU</li>
+                            <li class="cursor-pointer hover:text-fourth">Qui sommes-nous?</li>
+                        </ul>
+                    </div>
+                    <div class="h-auto mt-8 sm:w-1/4 sm:mt-0">
+                        <div class="mb-2 text-2xl font-bold">
+                            S'inscrire à la newsletter
+                        </div>
+                        <p class="leading-normal text-gray-200">Adresse email</p>
+                        <div class="flex mt-4">
+                            <input type="text" class="h-auto p-2 text-sm border border-grey-light round text-grey-dark" placeholder="Votre adresse email" />
+                            <button class="h-auto p-3 text-white rounded-sm bg-tertiary">S'inscrire</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-bottom" class="grid grid-cols-2 pb-6 mx-60 justify-items-stretch">
+                <div id="escadenca" class="pb-12 -ml-8">
+                    <!-- <div id="logo" class="flex items-center justify-center w-48 h-48 rounded-full" > -->
+                    <img class="max-h-44 max-w-44" src="assets/images/Bloc-marque.png" alt="logo Escadença coccinelle" />
+                    <!-- </div> -->
+                    <div id="agency" class="mt-2">
+                        <p class="ml-6 text-xl font-bold">Agence Escadença Media</p>
+                    </div>
+                </div>
+                <div id="social" class="grid grid-cols-1 mt-20 max-h-36 justify-items-end">
+                    <ul class="flex text-center text-white">
+                        <li class="p-2 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-white fill-current" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"
+                                />
+                            </svg>
+                        </li>
+                        <li class="p-2 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-white fill-current" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M21.231 0h-18.462c-1.529 0-2.769 1.24-2.769 2.769v18.46c0 1.531 1.24 2.771 2.769 2.771h18.463c1.529 0 2.768-1.24 2.768-2.771v-18.46c0-1.529-1.239-2.769-2.769-2.769zm-9.231 7.385c2.549 0 4.616 2.065 4.616 4.615 0 2.549-2.067 4.616-4.616 4.616s-4.615-2.068-4.615-4.616c0-2.55 2.066-4.615 4.615-4.615zm9 12.693c0 .509-.413.922-.924.922h-16.152c-.511 0-.924-.413-.924-.922v-10.078h1.897c-.088.315-.153.64-.2.971-.05.337-.081.679-.081 1.029 0 4.079 3.306 7.385 7.384 7.385s7.384-3.306 7.384-7.385c0-.35-.031-.692-.081-1.028-.047-.331-.112-.656-.2-.971h1.897v10.077zm0-13.98c0 .509-.413.923-.924.923h-2.174c-.511 0-.923-.414-.923-.923v-2.175c0-.51.412-.923.923-.923h2.174c.511 0 .924.413.924.923v2.175z"
+                                    fillRule="evenodd"
+                                    clipRule="evenodd"
+                                />
+                            </svg>
+                        </li>
+                        <li class="p-2 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-white fill-current" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                                />
+                            </svg>
+                        </li>
+                    </ul>
+                    <p class="text-2xl font-bold">Films de Plein Air</p>
+                    <p><span>01 02 03 04 05</span></p>
+                    <a class="block hover:text-indigo-600" href="/#">contact@etoilesettoiles.com<span class="p-1 text-xs"></span></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

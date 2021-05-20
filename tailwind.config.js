@@ -1,0 +1,71 @@
+const colors = require('tailwindcss/colors')
+
+module.exports = {
+  purge: [],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    fontFamily: {
+      body: ['Roboto', 'sans-serif'],
+      display: ['Quicksand', 'sans-serif'],
+      sans: ['Quicksand', 'sans-serif'],
+      serif: ['Courgette', 'cursive'],
+      mono: ['Roboto', 'sans-serif'],
+    },
+    extend: {
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        blueGray: colors.blugGray,
+        coolGray: colors.coolGray,
+        trueGray: colors.trueGray,
+        gray: colors.gray,
+        warmGray: colors.warmGray,
+        yellow: colors.yellow,
+        amber: colors.amber,
+        fuchsia: colors.fuchsia,
+        orange: colors.orange,
+        teal: colors.teal,
+        rose: colors.rose,
+        lime: colors.lime,
+        green: colors.green,
+        emerald: colors.emerald,
+        teal: colors.teal,
+        cyan: colors.cyan,
+        lightBlue: colors.lightBlue,
+        blue: colors.blue,
+        indigo: colors.indigo,
+        violet: colors.violet,
+        purple: colors.purple,
+        pink: colors.pink,
+        red: colors.red,
+        primary: '#003049',
+        secondary: '#d62828',
+        tertiary: '#f77f00',
+        fourth: '#fcbf49',
+        beige: '#eae2b7',
+      },
+      fontFamily: {
+        courgette: ['Courgette', 'cursive' ],
+        quicksand: ['Quicksand', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
+      backgroundImage: theme => ({
+        'camera': "url('/assets/images/appareil-photo.jpg')",
+        'popcorn': "url('/assets/images/popcorn.jpg')",
+        'goldrush' : "url(/assets/images/film_ruee_vers_or.jpg)",
+        'clap64' : "url(/assets/images/cinema_clap_64.png)",
+        'ticket' : "url(/assets/images/ticket.jpg)",
+        'outdoorcinema' : "url(/assets/images/outdoorcinema.jpg)",
+        'etoiles' : "url(/assets/images/cinema_etoiles.jpg)",
+        'parc' : "url(/assets/images/parc_monceau.jpg)",
+        'tontons' : "url(/assets/images/cinema_tontons.jpg)",
+      }),
+    },
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
+}
