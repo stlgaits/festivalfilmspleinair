@@ -1,142 +1,138 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendrier des séances - Etoiles et Toiles</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./tailwind.css" />
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Calendrier des séances - Etoiles et Toiles</title>
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300&family=Roboto&display=swap" rel="stylesheet">
+	<link href="./tailwind.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav class="fixed top-0 z-50 flex justify-end w-screen p-6 lg:w-full bg-primary bg-opacity-90">
-        <div class="items-center hidden w-auto pt-4 font-roboto lg:flex">
-            <a class="block mr-10 text-tertiary hover:text-gray-400" href="index.html">Accueil</a>
-            <a class="block mr-10 text-white hover:text-gray-400" href="films.html">A l'affiche</a>
-            <a class="block mr-10 text-white hover:text-gray-400" href="news.html">Actualités</a>
-            <a class="block mr-10 text-white hover:text-gray-400" href="calendar.html">Calendrier</a>
-            <a class="block mr-10 text-white hover:text-gray-400" href="contact.html">Contact</a>
-        </div>
-        <div class="flex items-center justify-between w-full pt-4 text-white lg:hidden">
-            <div class="">
-                <h1 class="text-lg font-bold font-courgette "><a href="index.html">Etoiles et Toiles</a></h1>
-                <h2>Festival de films de plein air</h2>
-            </div>
-            <div class="block ">
-                <button class="flex items-center px-4 py-3 border rounded text-fourth border-fourth focus:outline-none">
-                    <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                    </svg>
+	<header>
+		<nav class="fixed top-0 z-50 flex justify-end w-screen p-6 lg:w-full bg-primary bg-opacity-90">
+			<div class="items-center hidden w-auto pt-4 font-roboto lg:flex">
+				<a class="block mr-10 text-tertiary hover:text-gray-400" href="index.html">Accueil</a> 
+                <a class="block mr-10 text-white hover:text-gray-400" href="films.html">A l'affiche</a> 
+                <a class="block mr-10 text-white hover:text-gray-400" href="news.html">Actualités</a> 
+                <a class="block mr-10 text-white hover:text-gray-400" href="calendar.html">Calendrier</a> 
+                <a class="block mr-10 text-white hover:text-gray-400" href="contact.html">Contact</a>
+			</div>
+			<div class="flex items-center justify-between w-full pt-4 text-white lg:hidden">
+				<div class="">
+					<h1 class="text-lg font-bold font-courgette"><a href="index.html">Etoiles et Toiles</a></h1>
+					<h2>Festival de films de plein air</h2>
+				</div>
+				<div class="block">
+					<button id="burger" class="flex items-center px-4 py-3 border rounded text-fourth border-fourth focus:outline-none">
+                        <svg class="w-4 h-4 fill-current" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                        </svg>
                 </button>
-            </div>
-        </div>
-    </nav>
-</header>
-    <main>
-
-    </main>
-    <footer class="text-white bg-primary">
-      <div id="footer-top" class="container p-8 mx-auto bg-grey-lighter">
-          <div class="mb-4 md:flex">
-              <div class="h-auto sm:w-1/4">
-                  <div class="mb-2 text-2xl font-bold cursor-pointer">
-                      Films
-                  </div>
-                  <ul class="leading-normal list-reset">
-                      <li class="cursor-pointer hover:text-fourth"><a href="film.html">Chat Noir Chat Blanc</a></li>
-                      <li class="cursor-pointer hover:text-fourth">Merveilles à Montfermeil</li>
-                      <li class="cursor-pointer hover:text-fourth">Hotel By the River</li>
-                      <li class="cursor-pointer hover:text-fourth">Les héros ne meurent jamais</li>
-                  </ul>
-              </div>
-              <div class="h-auto sm:w-1/4">
-                  <div class="mb-2 text-2xl font-bold cursor-pointer">
-                      <a href="news.html">Actualités</a>
-                  </div>
-                  <ul class="leading-normal list-reset">
-                      <li class="cursor-pointer hover:text-fourth">Actu 1</li>
-                      <li class="cursor-pointer hover:text-fourth">Actu 2</li>
-                      <li class="cursor-pointer hover:text-fourth">Actu 3</li>
-                      <li class="cursor-pointer hover:text-fourth">Actu 4</li>
-                  </ul>
-              </div>
-              <div class="h-auto sm:w-1/4">
-                  <div class="mb-2 text-2xl font-bold cursor-pointer">
-                      Le festival
-                  </div>
-                  <ul class="leading-normal list-reset">
-                      <li class="cursor-pointer hover:text-fourth">Réserver</li>
-                      <li class="cursor-pointer hover:text-fourth">Lieu</li>
-                      <li class="cursor-pointer hover:text-fourth"><a href="contact.html">Contact</a></li>
-                  </ul>
-              </div>
-              <div class="h-auto mt-8 sm:w-1/4 sm:mt-0">
-                  <div class="mb-2 text-2xl font-bold cursor-pointer">
-                      L'association
-                  </div>
-                  <ul class="leading-normal list-reset">
-                      <li class="cursor-pointer hover:text-fourth">Politique de confidentialité</li>
-                      <li class="cursor-pointer hover:text-fourth">Mentions légales</li>
-                      <li class="cursor-pointer hover:text-fourth">CGU</li>
-                      <li class="cursor-pointer hover:text-fourth">Qui sommes-nous?</li>
-                  </ul>
-              </div>
-              <div class="h-auto mt-8 sm:w-1/4 sm:mt-0">
-                  <div class="mb-2 text-2xl font-bold">
-                      S'inscrire à la newsletter
-                  </div>
-                  <p class="leading-normal text-gray-200">Adresse email</p>
-                  <div class="flex mt-4">
-                      <input type="text" class="h-auto p-2 text-sm border border-grey-light round text-grey-dark" placeholder="Votre adresse email" />
-                      <button class="h-auto p-3 text-white rounded-sm bg-tertiary">S'inscrire</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div id="footer-bottom" class="grid grid-cols-1 grid-rows-2 pb-6 md:grid-cols-2 md:grid-rows-1 md:mx-60 md:justify-items-stretch place-items-center">
-          <div id="escadenca" class="md:pb-12 md:-ml-8">
-              <!-- <div id="logo" class="flex items-center justify-center w-48 h-48 rounded-full" > -->
-              <img class="max-h-44 max-w-44" src="assets/images/Bloc-marque.png" alt="logo Escadença coccinelle" />
-              <!-- </div> -->
-              <div id="agency" class="mt-2">
-                  <p class="ml-6 text-lg font-bold">Agence Escadença Media</p>
-              </div>
-          </div>
-          <div id="social" class="grid grid-cols-1 mt-20 max-h-36 justify-items-end ">
-              <ul class="flex text-center text-white">
-                  <li class="p-2 cursor-pointer">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="text-white fill-current" width="24" height="24" viewBox="0 0 24 24">
-                          <path
-                              d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"
-                          />
-                      </svg>
-                  </li>
-                  <li class="p-2 cursor-pointer">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="text-white fill-current" width="24" height="24" viewBox="0 0 24 24">
-                          <path
-                              d="M21.231 0h-18.462c-1.529 0-2.769 1.24-2.769 2.769v18.46c0 1.531 1.24 2.771 2.769 2.771h18.463c1.529 0 2.768-1.24 2.768-2.771v-18.46c0-1.529-1.239-2.769-2.769-2.769zm-9.231 7.385c2.549 0 4.616 2.065 4.616 4.615 0 2.549-2.067 4.616-4.616 4.616s-4.615-2.068-4.615-4.616c0-2.55 2.066-4.615 4.615-4.615zm9 12.693c0 .509-.413.922-.924.922h-16.152c-.511 0-.924-.413-.924-.922v-10.078h1.897c-.088.315-.153.64-.2.971-.05.337-.081.679-.081 1.029 0 4.079 3.306 7.385 7.384 7.385s7.384-3.306 7.384-7.385c0-.35-.031-.692-.081-1.028-.047-.331-.112-.656-.2-.971h1.897v10.077zm0-13.98c0 .509-.413.923-.924.923h-2.174c-.511 0-.923-.414-.923-.923v-2.175c0-.51.412-.923.923-.923h2.174c.511 0 .924.413.924.923v2.175z"
-                              fillRule="evenodd"
-                              clipRule="evenodd"
-                          />
-                      </svg>
-                  </li>
-                  <li class="p-2 cursor-pointer">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="text-white fill-current" width="24" height="24" viewBox="0 0 24 24">
-                          <path
-                              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
-                          />
-                      </svg>
-                  </li>
-              </ul>
-              <p class="text-2xl font-bold">Films de Plein Air</p>
-              <p><span>01 02 03 04 05</span></p>
-              <a class="block hover:text-indigo-600" href="mailto:">contact@etoilesettoiles.com<span class="p-1 text-xs"></span></a>
-          </div>
-      </div>
-  </footer>
-  
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main></main>
+	<footer class="text-white bg-primary">
+		<div class="container p-8 mx-auto bg-grey-lighter" id="footer-top">
+			<div class="mb-4 md:flex">
+				<div class="h-auto sm:w-1/4">
+					<div class="mb-2 text-2xl font-bold cursor-pointer">
+						Films
+					</div>
+					<ul class="leading-normal list-reset">
+						<li class="cursor-pointer hover:text-fourth">
+							<a href="film.html">Chat Noir Chat Blanc</a>
+						</li>
+						<li class="cursor-pointer hover:text-fourth">Merveilles à Montfermeil</li>
+						<li class="cursor-pointer hover:text-fourth">Hotel By the River</li>
+						<li class="cursor-pointer hover:text-fourth">Les héros ne meurent jamais</li>
+					</ul>
+                    <div id="burger-nav" class="bg-white lg:hidden" hidden>
+                        <a class="block py-1 mx-10 text-tertiary hover:text-gray-400" href="index.html">Accueil</a>
+                        <a class="block py-1 mx-10 text-primary hover:text-gray-400" href="films.html">A l'affiche</a>
+                        <a class="block py-1 mx-10 text-primary hover:text-gray-400" href="news.html">Actualités</a>
+                        <a class="block py-1 mx-10 text-primary hover:text-gray-400" href="calendar.html">Calendrier</a>
+                        <a class="block py-1 mx-10 text-primary hover:text-gray-400" href="contact.html">Contact</a>
+                    </div>
+				</div>
+				<div class="h-auto sm:w-1/4">
+					<div class="mb-2 text-2xl font-bold cursor-pointer">
+						<a href="news.html">Actualités</a>
+					</div>
+					<ul class="leading-normal list-reset">
+						<li class="cursor-pointer hover:text-fourth">Actu 1</li>
+						<li class="cursor-pointer hover:text-fourth">Actu 2</li>
+						<li class="cursor-pointer hover:text-fourth">Actu 3</li>
+						<li class="cursor-pointer hover:text-fourth">Actu 4</li>
+					</ul>
+				</div>
+				<div class="h-auto sm:w-1/4">
+					<div class="mb-2 text-2xl font-bold cursor-pointer">
+						Le festival
+					</div>
+					<ul class="leading-normal list-reset">
+						<li class="cursor-pointer hover:text-fourth">Réserver</li>
+						<li class="cursor-pointer hover:text-fourth">Lieu</li>
+						<li class="cursor-pointer hover:text-fourth">
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div class="h-auto mt-8 sm:w-1/4 sm:mt-0">
+					<div class="mb-2 text-2xl font-bold cursor-pointer">
+						L'association
+					</div>
+					<ul class="leading-normal list-reset">
+						<li class="cursor-pointer hover:text-fourth">Politique de confidentialité</li>
+						<li class="cursor-pointer hover:text-fourth">Mentions légales</li>
+						<li class="cursor-pointer hover:text-fourth">CGU</li>
+						<li class="cursor-pointer hover:text-fourth">Qui sommes-nous?</li>
+					</ul>
+				</div>
+				<div class="h-auto mt-8 sm:w-1/4 sm:mt-0">
+					<div class="mb-2 text-2xl font-bold">
+						S'inscrire à la newsletter
+					</div>
+					<p class="leading-normal text-gray-200">Adresse email</p>
+					<div class="flex mt-4">
+						<input class="h-auto p-2 text-sm border border-grey-light round text-grey-dark" placeholder="Votre adresse email" type="text">
+                        <button class="h-auto p-3 text-white rounded-sm bg-tertiary">S'inscrire</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid grid-cols-1 grid-rows-2 pb-6 md:grid-cols-2 md:grid-rows-1 md:mx-60 md:justify-items-stretch place-items-center" id="footer-bottom">
+			<div class="md:pb-12 md:-ml-8" id="escadenca">
+				<!-- <div id="logo" class="flex items-center justify-center w-48 h-48 rounded-full" > -->
+				<img alt="logo Escadença coccinelle" class="max-h-44 max-w-44" src="assets/images/Bloc-marque.png"> <!-- </div> -->
+				<div class="mt-2" id="agency">
+					<p class="ml-6 text-lg font-bold">Agence Escadença Media</p>
+				</div>
+			</div>
+			<div class="grid grid-cols-1 mt-20 max-h-36 justify-items-end" id="social">
+				<ul class="flex text-center text-white">
+					<li class="p-2 cursor-pointer">
+						<svg class="text-white fill-current" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path></svg>
+					</li>
+					<li class="p-2 cursor-pointer">
+						<svg class="text-white fill-current" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+						<path cliprule="evenodd" d="M21.231 0h-18.462c-1.529 0-2.769 1.24-2.769 2.769v18.46c0 1.531 1.24 2.771 2.769 2.771h18.463c1.529 0 2.768-1.24 2.768-2.771v-18.46c0-1.529-1.239-2.769-2.769-2.769zm-9.231 7.385c2.549 0 4.616 2.065 4.616 4.615 0 2.549-2.067 4.616-4.616 4.616s-4.615-2.068-4.615-4.616c0-2.55 2.066-4.615 4.615-4.615zm9 12.693c0 .509-.413.922-.924.922h-16.152c-.511 0-.924-.413-.924-.922v-10.078h1.897c-.088.315-.153.64-.2.971-.05.337-.081.679-.081 1.029 0 4.079 3.306 7.385 7.384 7.385s7.384-3.306 7.384-7.385c0-.35-.031-.692-.081-1.028-.047-.331-.112-.656-.2-.971h1.897v10.077zm0-13.98c0 .509-.413.923-.924.923h-2.174c-.511 0-.923-.414-.923-.923v-2.175c0-.51.412-.923.923-.923h2.174c.511 0 .924.413.924.923v2.175z" fillrule="evenodd"></path></svg>
+					</li>
+					<li class="p-2 cursor-pointer">
+						<svg class="text-white fill-current" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+					</li>
+				</ul>
+				<p class="text-2xl font-bold">Films de Plein Air</p>
+				<p><span>01 02 03 04 05</span></p><a class="block hover:text-indigo-600" href="mailto:">contact@etoilesettoiles.com<span class="p-1 text-xs"></span></a>
+			</div>
+		</div>
+	</footer>
+    <script type="text/javascript" src="functions.js"></script>
 </body>
 </html>

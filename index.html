@@ -13,7 +13,7 @@
         <header>
             <nav class="fixed top-0 z-50 flex justify-end w-screen p-6 lg:w-full bg-primary bg-opacity-90">
                 <div class="items-center hidden w-auto pt-4 font-roboto lg:flex">
-                    <a class="block mr-10 text-tertiary hover:text-gray-400" href="#">Accueil</a>
+                    <a class="block mr-10 text-tertiary hover:text-gray-400" href="index.html">Accueil</a>
                     <a class="block mr-10 text-white hover:text-gray-400" href="films.html">A l'affiche</a>
                     <a class="block mr-10 text-white hover:text-gray-400" href="news.html">Actualités</a>
                     <a class="block mr-10 text-white hover:text-gray-400" href="calendar.html">Calendrier</a>
@@ -24,13 +24,20 @@
                         <h1 class="text-lg font-bold font-courgette "><a href="index.html">Etoiles et Toiles</a></h1>
                         <h2>Festival de films de plein air</h2>
                     </div>
-                    <div class="block ">
-                        <button class="flex items-center px-4 py-3 border rounded text-fourth border-fourth focus:outline-none">
-                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <div class="block">
+                        <button id="burger" class="flex items-center px-4 py-3 border rounded text-fourth border-fourth focus:outline-none">
+                            <svg  class="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <title>Menu</title>
                                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
                             </svg>
                         </button>
+                        <div id="burger-nav" class="bg-white lg:hidden" hidden>
+                            <a class="block py-1 mx-10 text-tertiary hover:text-gray-400" href="index.html">Accueil</a>
+                            <a class="block py-1 mx-10 text-primary hover:text-gray-400" href="films.html">A l'affiche</a>
+                            <a class="block py-1 mx-10 text-primary hover:text-gray-400" href="news.html">Actualités</a>
+                            <a class="block py-1 mx-10 text-primary hover:text-gray-400" href="calendar.html">Calendrier</a>
+                            <a class="block py-1 mx-10 text-primary hover:text-gray-400" href="contact.html">Contact</a>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -49,7 +56,7 @@
                             <button type="submit" class="px-12 py-3 text-white rounded-md shadow-md text-md w-max lg:w-full bg-tertiary hover:bg-orange-400">Télécharger le programme PDF</button>
                         </div>
                     </div>
-                    <div id="booking-form" class="flex justify-center md:-mb-6 -mb-12 w-full lg:w-1/2 lg:justify-end">
+                    <div id="booking-form" class="flex justify-center w-full -mb-12 md:-mb-6 lg:w-1/2 lg:justify-end">
                         <div class="flex-auto max-w-sm p-10 pb-20 bg-white shadow-md">
                             <div class="w-full">
                                 <div class="h-6 mt-3 text-xs font-bold leading-8 text-gray-600 uppercase">Nom <span class="mr-1 text-red-400">*</span></div>
@@ -110,7 +117,7 @@
                                     En Islande, alors que tout le monde se prépare pour les fêtes de Noël, une ambiance particulière s'empare du pays. Entre exaltation et inquiétude, Echo dresse un portrait mordant et tendre de notre
                                     société moderne.
                                 </p>
-								<button type="button" class="w-5/6 h-10 mt-4 ml-2 md:ml-0 text-lg text-white rounded-md md:h-max md:w-7/12 md:my-2 md:py-2 md:px-6 bg-secondary hover:bg-red-200">Réserver ma place</button>
+								<button type="button" class="w-5/6 h-10 mt-4 ml-2 text-lg text-white rounded-md md:ml-0 md:h-max md:w-7/12 md:my-2 md:py-2 md:px-6 bg-secondary hover:bg-red-200">Réserver ma place</button>
                             </div>
                         </div>
                     </article>
@@ -145,27 +152,27 @@
                 <div class="object-fill h-auto px-10 py-24 text-white bg-fixed bg-center bg-cover" style="background-image: url(assets/images/outdoorcinema.jpg);">
                     <div class="grid w-full grid-cols-1 place-items-center">
                         <h2 class="my-6 text-6xl font-bold text-center">Toutes les séances sont gratuites !</h2>
-                        <p class="mb-10 text-2xl text-center leading-none">Pensez simplement à réserver vos billets !</p>
+                        <p class="mb-10 text-2xl leading-none text-center">Pensez simplement à réserver vos billets !</p>
                     </div>
                 </div>
             </section>
-            <section id="association" class="md:pb-12 pb-0 bg-beige mb-0">
-                <div class="grid w-full grid-cols-1 md:grid-cols-2 gap-10 grid-rows-2 md:grid-rows-1 pt-12 md:pt-16 pl-6 pr-6 text-white">
+            <section id="association" class="pb-0 mb-0 md:pb-12 bg-beige">
+                <div class="grid w-full grid-cols-1 grid-rows-2 gap-10 pt-12 pl-6 pr-6 text-white md:grid-cols-2 md:grid-rows-1 md:pt-16">
                     <div id ="asso-text" class="px-12">
-                        <h4 class="pb-12 font-bold text-2xl md:text-5xl text-center md:text-left">Association Films de Plein Air</h4>
+                        <h4 class="pb-12 text-2xl font-bold text-center md:text-5xl md:text-left">Association Films de Plein Air</h4>
                         <p class="pb-12 text-justify text-gray-400">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias optio quasi nulla earum consequuntur illo expedita culpa officiis quia eaque sit excepturi reprehenderit quisquam eligendi vitae, cupiditate
                             ipsa accusantium illum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias optio quasi nulla earum consequuntur illo expedita culpa officiis quia eaque sit excepturi reprehenderit quisquam
                             eligendi vitae, cupiditate ipsa accusantium illum.
                         </p>
-                        <a href="#"><button class="px-12 py-3 mr-5 text-lg w-full md:w-auto text-white rounded-md shadow-md bg-primary hover:bg-blue-900">En savoir plus</button></a>
+                        <a href="#"><button class="w-full px-12 py-3 mr-5 text-lg text-white rounded-md shadow-md md:w-auto bg-primary hover:bg-blue-900">En savoir plus</button></a>
                     </div>
                     <div id="asso-carousel" class="grid grid-cols-1 gap-1 justify-items-center place-items-center h-1/2">
-                        <div class="md:w-4/6 -mb-8 md:mb-2 h-4/6 md:h-full">
+                        <div class="-mb-8 md:w-4/6 md:mb-2 h-4/6 md:h-full">
                             <img src="assets/images/cinema_etoiles.jpg" alt="Des gens assis dans l\'herbe regardent un film sur grand écran sous un ciel étoilé."/>
                         </div>
                         <!-- <div class="flex justify-between w-24 pb-2 mx-auto"> -->
-                        <div class="grid grid-cols-4 grid-rows-1 w-24 pb-2 mx-auto place-items-center h-6 justify-items-center">
+                        <div class="grid w-24 h-6 grid-cols-4 grid-rows-1 pb-2 mx-auto place-items-center justify-items-center">
                             <button class="w-4 p-2 rounded-full bg-primary"></button>
                             <button class="w-4 p-2 bg-blue-300 rounded-full"></button>
                             <button class="w-4 p-2 bg-blue-300 rounded-full"></button>
@@ -272,9 +279,9 @@
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis mollitia tempora deleniti eveniet doloremque incidunt soluta ullam error voluptatum est voluptatem perspiciatis, dicta dolores quo cumque natus
                             velit facere hic.
                         </p>
-                        <div class="mapouter max-w-sm h-96 mb-12 ml-6 w-auto md:w-96 -mb-2">
-                            <div class="gmap_canvas overflow-hidden h-full md:w-96 w-auto">
-                                <iframe  class="h-full md:w-96 w-auto" src="https://maps.google.com/maps?q=parc%20monceau&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <div class="w-auto max-w-sm mb-12 ml-6 -mb-2 mapouter h-96 md:w-96">
+                            <div class="w-auto h-full overflow-hidden gmap_canvas md:w-96">
+                                <iframe  class="w-auto h-full md:w-96" src="https://maps.google.com/maps?q=parc%20monceau&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                             </div>
                         </div>
                     </div>
@@ -379,8 +386,8 @@
                     </div>
                 </div>
             </div>
-            <div id="footer-bottom" class="grid md:grid-cols-2 grid-rows-2 md:grid-rows-1 grid-cols-1 pb-6 md:mx-60 md:justify-items-stretch place-items-center">
-                <div id="escadenca" class="md:pb-12  md:-ml-8">
+            <div id="footer-bottom" class="grid grid-cols-1 grid-rows-2 pb-6 md:grid-cols-2 md:grid-rows-1 md:mx-60 md:justify-items-stretch place-items-center">
+                <div id="escadenca" class="md:pb-12 md:-ml-8">
                     <!-- <div id="logo" class="flex items-center justify-center w-48 h-48 rounded-full" > -->
                     <img class="max-h-44 max-w-44" src="assets/images/Bloc-marque.png" alt="logo Escadença coccinelle" />
                     <!-- </div> -->
@@ -420,5 +427,6 @@
                 </div>
             </div>
         </footer>
+        <script type="text/javascript" src="functions.js"></script>
     </body>
 </html>
