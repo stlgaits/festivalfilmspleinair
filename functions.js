@@ -1,5 +1,3 @@
-
-
 var burger = document.getElementById("burger");
 var burgerNav = document.getElementById("burger-nav");
 
