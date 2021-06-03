@@ -42,10 +42,15 @@
 				</div>
 			</nav>
 		</header>
-		<main class="w-screen py-40 mb-12 bg-white">
-			<section id="download-programme" class="grid pb-6 place-items-center">
-				<div>
-					<button type="submit" class="px-12 py-3 text-white rounded-md shadow-md text-md lg:w-full bg-tertiary hover:bg-orange-400">Télécharger le programme PDF</button>
+		<main class="w-screen py-40 bg-white">
+			<section class="md:grid md:grid-cols-2 md:justify-items-stretch md:pb-12">
+				<div id="download-programme" class="grid pb-6 place-items-center">
+					<div>
+						<button type="submit" class="px-12 py-3 text-white rounded-md shadow-md text-md lg:w-full bg-tertiary hover:bg-orange-400">Télécharger le programme PDF</button>
+					</div>
+				</div>
+				<div id="page-title" class="hidden md:block">
+					<h1 class="text-5xl font-bold font-courgette">Films à l'affiche</h1>
 				</div>
 			</section>
 			<section id="search-inputs" class="grid grid-cols-1">
@@ -64,51 +69,90 @@
 				</div>
 			</section>
 			<section id="films" class="grid grid-cols-2">
-				<div class="grid grid-cols-2 col-span-2 my-6 place-items-center justify-items-center">	
-					<p>août 2021</p>
-					<hr class="w-11/12 -ml-20 divide-solid">
+				<div class="grid grid-cols-2 col-span-2 my-6 place-items-center md:px-24 justify-items-center">	
+					<p class="text-lg">août 2021</p>
+					<hr class="w-11/12 -ml-20 md:w-12/12 md:ml-0 divide-solid">
 				</div>
-				<article id="film-card" class="grid grid-cols-2 col-span-2 gap-0 place-items-stretch justify-items-stretch">
-					<aside id="date" class="w-1/2 py-12 border-r-2 border-gray-300 ">
-						<div class="text-center">
+				<article id="film-card-1" class="grid grid-cols-2 col-span-2 gap-0 mb-12 mr-6 place-items-stretch justify-items-stretch md:justify-items-start">
+					<aside id="date-thur-5-aug-1" class="w-1/2 py-12 border-r-2 border-gray-300 md:w-1/4">
+						<div class="text-center ">
 							<p>JEU</p>
 							<p class="font-bold">5</p>
 						</div>
 					</aside>
-					<div class="max-w-md my-2 mr-6 -ml-12 overflow-hidden rounded shadow-lg">
-						<img class="w-full" src="assets/images/film_kajillionaire.jpg" alt="affiche du film Kajiollionaire">
-						<div class="px-6 py-4">
-							<p>5 août 2021 <span>@ 19h</span></p>
-							<h4 class="text-2xl font-bold">Kajillionaire</h4>
-							<p>Parc Monceau</p>
-							<p>35 boulevard de Courcelles </p>
-							<p>Paris</p>
-							<button type="button" class="p-2 mt-2 text-white rounded bg-secondary">Réserver</button>
+					<div class="max-w-md my-2 mr-6 -ml-12 overflow-hidden rounded shadow-lg md:ml-0 md:grid-cols-2 md:grid md:max-w-6xl md:mr-24">
+						<img class="w-full md:order-last" src="assets/images/film_kajillionaire.jpg" alt="affiche du film Kajiollionaire">
+						<div class="px-6 py-4 md:py-12 md:px-12">
+							<p class="md:text-xl">5 août 2021 <span>@ 19h</span></p>
+							<h4 class="text-2xl font-bold md:text-4xl">Kajillionaire</h4>
+							<div class="md:pt-4 md:text-xl">
+								<p>Parc Monceau</p>
+								<p>35 boulevard de Courcelles </p>
+								<p>Paris</p>
+								<p class="hidden mb-6 text-lg text-justify font-roboto md:block">
+                                    Theresa et Robert ont passé 26 ans à former leur fille unique, Old Dolio, à escroquer, arnaquer et voler à chaque occasion. Au cours d'un cambriolage conçu à la hâte, ils proposent à une jolie inconnue
+                                    ingénue, Mélanie, de les rejoindre, bouleversant complètement la routine d'Old Dolio.
+                                </p>
+							</div>
+							<button type="button" class="p-2 mt-2 text-white rounded bg-secondary md:w-60">Réserver</button>
 						</div>
 					</div>
-					<!-- <div id="film" class="grid w-48 grid-cols-1 grid-rows-5 gap-0 -ml-12 bg-pink-500">
-						<div id="film-poster">
-							<img src="assets/images/film_kajillionaire.jpg" alt="affiche de film" />
+				</article> 
+				<article id="film-card-2" class="grid grid-cols-2 col-span-2 gap-0 mb-12 mr-6 place-items-stretch justify-items-stretch md:justify-items-start">
+					<aside id="date-thur-5-aug-2" class="w-1/2 py-12 border-r-2 border-gray-300 md:w-1/4">
+						<div class="text-center ">
+							<p>JEU</p>
+							<p class="font-bold">5</p>
 						</div>
-						<div id="screening-datetime">
-							<p>5 août 2021 <span>@ 19h</span></p>
-						</div>
-						<div id="film-title" class="">
-							<h4 class="text-2xl font-bold">Kajillionaire</h4>
-						</div>
-						<div id="address">
-							<p>Parc Monceau</p>
-							<p>35 boulevar de Courcelles - Paris</p>
-						</div>
-						<div id="booking-button">
-							<button type="button">Je réserve ma place</button>
+					</aside>
+					<div class="max-w-md my-2 mr-6 -ml-12 overflow-hidden rounded shadow-lg md:ml-0 md:grid-cols-2 md:grid md:max-w-6xl md:mr-24">
+						<img class="w-full md:order-last" src="assets/images/film_ruee_vers_or.jpg" alt="affiche du film Kajiollionaire">
+						<div class="px-6 py-4 md:py-12 md:px-12">
+							<p class="md:text-xl">5 août 2021 <span>@ 21h</span></p>
+							<h4 class="text-2xl font-bold md:text-4xl">La ruée vers l'or</h4>
+							<div class="md:pt-4 md:text-xl">
+								<p>Parc Monceau</p>
+								<p>35 boulevard de Courcelles </p>
+								<p>Paris</p>
+								<p class="hidden mb-6 text-lg text-justify font-roboto md:block">
+									Klondike, fin du XIXème siècle. Des aventuriers partent en quête de filons d'or dans les montagnes enneigées. Parmi eux, Charlot. pris dans une tempête de neige, il échoue dans la cabane du bandit Black Larsen et est sauvé de justesse par l'arrivée de Jim Mckay, autre chercheur d'or. après quelques aventures, les deux amis se séparent.
+                                </p>
+							</div>
+							<button type="button" class="p-2 mt-2 text-white rounded bg-secondary md:w-60">Réserver</button>
 						</div>
 					</div>
-					<div></div>
-				</article> -->
+				</article> 
+				<article id="film-card-3" class="grid grid-cols-2 col-span-2 gap-0 mb-12 mr-6 place-items-stretch justify-items-stretch md:justify-items-start">
+					<aside id="date-fri-6-aug-1" class="w-1/2 py-12 border-r-2 border-gray-300 md:w-1/4">
+						<div class="text-center ">
+							<p>VEN</p>
+							<p class="font-bold">6</p>
+						</div>
+					</aside>
+					<div class="max-w-md my-2 mr-6 -ml-12 overflow-hidden rounded shadow-lg md:ml-0 md:grid-cols-2 md:grid md:max-w-6xl md:mr-24">
+						<img class="w-full md:order-last" src="assets/images/film_echo.jpg" alt="affiche du film Kajiollionaire">
+						<div class="px-6 py-4 md:py-12 md:px-12">
+							<p class="md:text-xl">6 août 2021 <span>@ 21h</span></p>
+							<h4 class="text-2xl font-bold md:text-4xl">Echo</h4>
+							<div class="md:pt-4 md:text-xl">
+								<p>Parc Monceau</p>
+								<p>35 boulevard de Courcelles </p>
+								<p>Paris</p>
+								<p class="hidden mb-6 text-lg text-justify font-roboto md:block">
+									En Islande, alors que tout le monde se prépare pour les fêtes de Noël, une ambiance particulière s'empare du pays. Entre exaltation et inquiétude, Echo dresse un portrait mordant et tendre de notre
+                                    société moderne.
+                                </p>
+							</div>
+							<button type="button" class="p-2 mt-2 text-white rounded bg-secondary md:w-60">Réserver</button>
+						</div>
+					</div>
+				</article> 
+			</section>
+			<section class="ml-8 -mb-12">
+				<button id="scrollToTopBtn" class="font-bold text-primary">Retour en haut de page</button>
 			</section>
 		</main>
-		<footer class="text-white bg-primary">
+		<footer class="-mt-16 text-white bg-primary">
 			<div id="footer-top" class="container p-8 mx-auto bg-grey-lighter">
 				<div class="mb-4 md:flex">
 					<div class="h-auto sm:w-1/4">
@@ -168,9 +212,7 @@
 			</div>
 			<div id="footer-bottom" class="grid grid-cols-1 grid-rows-2 pb-6 md:grid-cols-2 md:grid-rows-1 md:mx-60 md:justify-items-stretch place-items-center">
 				<div id="escadenca" class="md:pb-12 md:-ml-8">
-					<!-- <div id="logo" class="flex items-center justify-center w-48 h-48 rounded-full" > -->
 					<img class="max-h-44 max-w-44" src="assets/images/Bloc-marque.png" alt="logo Escadença coccinelle" />
-					<!-- </div> -->
 					<div id="agency" class="mt-2">
 						<p class="ml-6 text-lg font-bold">Agence Escadença Media</p>
 					</div>
