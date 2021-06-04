@@ -1,240 +1,318 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-	<meta charset="UTF-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>Chat Noir Chat Blanc - Eric Kusturica - Fiche film individuel</title>
-	<link href="https://fonts.gstatic.com" rel="preconnect">
-	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300&family=Roboto&display=swap" rel="stylesheet">
-	<link href="./tailwind.css" rel="stylesheet">
-</head>
-<body>
-	<header>
-		<nav class="fixed top-0 z-50 flex justify-end w-screen p-6 lg:w-full bg-primary bg-opacity-90">
-			<div class="items-center hidden w-auto pt-4 font-roboto lg:flex">
-				<a class="block mr-10 text-tertiary hover:text-gray-400" href="index.html">Accueil</a>
-                <a class="block mr-10 text-white hover:text-gray-400" href="films.html">A l'affiche</a> 
-                <a class="block mr-10 text-white hover:text-gray-400" href="news.html">Actualités</a> 
-                <a class="block mr-10 text-white hover:text-gray-400" href="calendar.html">Calendrier</a> 
-                <a class="block mr-10 text-white hover:text-gray-400" href="contact.html">Contact</a>
-			</div>
-			<div class="flex items-center justify-between w-full pt-4 text-white lg:hidden">
-				<div class="">
-					<h1 class="text-lg font-bold font-courgette"><a href="index.html">Etoiles et Toiles</a></h1>
-					<h2>Festival de films de plein air</h2>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<title>Chat Noir Chat Blanc - Eric Kusturica - Fiche film individuel</title>
+		<link href="https://fonts.gstatic.com" rel="preconnect">
+		<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300&family=Roboto&display=swap" rel="stylesheet">
+		<link href="./tailwind.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<nav class="fixed top-0 z-50 flex justify-end w-screen p-6 lg:w-full bg-primary bg-opacity-90">
+				<div class="items-center hidden w-auto pt-4 font-roboto lg:flex">
+					<a class="block mr-10 text-tertiary hover:text-gray-400" href="index.html">Accueil</a>
+					<a class="block mr-10 text-white hover:text-gray-400" href="films.html">A l'affiche</a> 
+					<a class="block mr-10 text-white hover:text-gray-400" href="news.html">Actualités</a> 
+					<a class="block mr-10 text-white hover:text-gray-400" href="calendar.html">Calendrier</a> 
+					<a class="block mr-10 text-white hover:text-gray-400" href="contact.html">Contact</a>
 				</div>
-				<div class="block">
-					<button class="flex items-center px-4 py-3 border rounded text-fourth border-fourth focus:outline-none" id="burger">
-                        <svg class="w-4 h-4 fill-current" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <title>Menu</title>
-                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                        </svg>
-                    </button>
-					<div class="bg-white lg:hidden" hidden="" id="burger-nav">
-						<a class="block py-1 mx-10 text-tertiary hover:text-gray-400" href="index.html">Accueil</a> 
-                        <a class="block py-1 mx-10 text-primary hover:text-gray-400" href="films.html">A l'affiche</a> 
-                        <a class="block py-1 mx-10 text-primary hover:text-gray-400" href="news.html">Actualités</a> 
-                        <a class="block py-1 mx-10 text-primary hover:text-gray-400" href="calendar.html">Calendrier</a> 
-                        <a class="block py-1 mx-10 text-primary hover:text-gray-400" href="contact.html">Contact</a>
+				<div class="flex items-center justify-between w-full pt-4 text-white lg:hidden">
+					<div class="">
+						<h1 class="text-lg font-bold font-courgette"><a href="index.html">Etoiles et Toiles</a></h1>
+						<h2>Festival de films de plein air</h2>
+					</div>
+					<div class="block">
+						<button class="flex items-center px-4 py-3 border rounded text-fourth border-fourth focus:outline-none" id="burger">
+							<svg class="w-4 h-4 fill-current" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+								<title>Menu</title>
+								<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+							</svg>
+						</button>
+						<div class="bg-white lg:hidden" hidden="" id="burger-nav">
+							<a class="block py-1 mx-10 text-tertiary hover:text-gray-400" href="index.html">Accueil</a> 
+							<a class="block py-1 mx-10 text-primary hover:text-gray-400" href="films.html">A l'affiche</a> 
+							<a class="block py-1 mx-10 text-primary hover:text-gray-400" href="news.html">Actualités</a> 
+							<a class="block py-1 mx-10 text-primary hover:text-gray-400" href="calendar.html">Calendrier</a> 
+							<a class="block py-1 mx-10 text-primary hover:text-gray-400" href="contact.html">Contact</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main class="grid w-screen pt-40 justify-items-center">
+			<section class="container">
+				<div class="w-full mx-auto mb-4 md:mb-0">
+				<div class="px-4 ">
+					<h2 class="text-2xl font-semibold leading-tight text-center text-gray-800">
+						Annonce : festival 2021 réservez vos places !
+					</h2>
+					<p class="inline-flex items-center justify-center py-2 mb-2">Posté le <span class="text-blue-500 underline"> 23 mars 2021 </span> Auteur Mike</p>
+				</div>
+				<div>
+					<img src="assets/images/clap_desert_1920.jpg" class="hidden object-cover w-full lg:rounded h-96 md:block" />
+					<img src="assets/images/clap_desert.jpg" class="block object-cover w-full lg:rounded h-96 md:hidden" />
+				</div>
+				<div class="grid grid-cols-1 justify-items-center">
+					<article class="w-full px-4 mt-12 text-lg leading-relaxed text-gray-700 lg:px-0 lg:w-3/4">
+						<p class="pb-6">Advantage old had otherwise sincerity dependent additions. It in adapted natural hastily is
+							justice. Six draw
+							you him full not mean evil. Prepare garrets it expense windows shewing do an. She projection advantages
+							resolution son indulgence. Part sure on no long life am at ever. In songs above he as drawn to. Gay was
+							outlived peculiar rendered led six.
+						</p>
+						<p class="pb-6">Difficulty on insensible reasonable in. From as went he they. Preference themselves me as
+							thoroughly
+							partiality considered on in estimating. Middletons acceptance discovered projecting so is so or. In or
+							attachment inquietude remarkably comparison at an. Is surrounded prosperous stimulated am me discretion
+							expression. But truth being state can she china widow. Occasional preference fat remarkably now projecting
+							uncommonly dissimilar. Sentiments projection particular companions interested do at my delightful. Listening
+							newspaper in advantage frankness to concluded unwilling.
+						</p>
+						<p class="pb-6">Adieus except say barton put feebly favour him. Entreaties unpleasant sufficient few pianoforte
+							discovered
+							uncommonly ask. Morning cousins amongst in mr weather do neither. Warmth object matter course active law
+							spring six. Pursuit showing tedious unknown winding see had man add. And park eyes too more him. Simple excuse
+							active had son wholly coming number add. Though all excuse ladies rather regard assure yet. If feelings so
+							prospect no as raptures quitting.
+						</p>
+						<div class="pl-4 mb-6 italic border-l-4 border-gray-500 rounded">
+							Sportsman do offending supported extremity breakfast by listening. Decisively advantages nor
+							expression
+							unpleasing she led met. Estate was tended ten boy nearer seemed. As so seeing latter he should thirty whence.
+							Steepest speaking up attended it as. Made neat an on be gave show snug tore.
+						</div>
+						<p class="pb-6">Exquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me
+							everything.
+							Is fine loud deal an rent open give. Find upon and sent spot song son eyes. Do endeavor he differed carriage
+							is learning my graceful. Feel plan know is he like on pure. See burst found sir met think hopes are marry
+							among. Delightful remarkably new assistance saw literature mrs favourable.
+						</p>
+						<h2 class="mt-4 mb-4 text-2xl font-semibold text-gray-800">Uneasy barton seeing remark happen his has</h2>
+						<p class="pb-6">Guest it he tears aware as. Make my no cold of need. He been past in by my hard. Warmly thrown
+							oh he common
+							future. Otherwise concealed favourite frankness on be at dashwoods defective at. Sympathize interested
+							simplicity at do projecting increasing terminated. As edward settle limits at in.
+						</p>
+						<p class="pb-6">Dashwood contempt on mr unlocked resolved provided of of. Stanhill wondered it it welcomed oh.
+							Hundred no
+							prudent he however smiling at an offence. If earnestly extremity he he propriety something admitting convinced
+							ye. Pleasant in to although as if differed horrible. Mirth his quick its set front enjoy hoped had there. Who
+							connection imprudence middletons too but increasing celebrated principles joy. Herself too improve gay winding
+							ask expense are compact. New all paid few hard pure she.
+						</p>
+						<p class="pb-6">Breakfast agreeable incommode departure it an. By ignorant at on wondered relation. Enough at
+							tastes really
+							so cousin am of. Extensive therefore supported by extremity of contented. Is pursuit compact demesne invited
+							elderly be. View him she roof tell her case has sigh. Moreover is possible he admitted sociable concerns. By
+							in cold no less been sent hard hill.
+						</p>
+						<p class="pb-6">Detract yet delight written farther his general. If in so bred at dare rose lose good. Feel and
+							make two real
+							miss use easy. Celebrated delightful an especially increasing instrument am. Indulgence contrasted sufficient
+							to unpleasant in in insensible favourable. Latter remark hunted enough vulgar say man. Sitting hearted on it
+							without me.
+						</p>
+						<div class="hidden md:w-full md:grid-cols-2 md:grid md:justify-items-center">
+							<div>
+								<span>←</span>
+								<a href="article.html" class="text-indigo-500 underline">Article précédent</a>
+							</div>
+							<div>
+								<a href="article.html" class="text-indigo-500 underline">Article suivant</a>
+								<span>→</span>
+							</div>
+						</div>
+					</article>
+					<aside id="comments" class="flex items-center justify-center mx-auto mb-4">
+						<div class="grid m-auto mt-12 justify-items-center">
+							<div class="w-full p-6 border-t border-b lg:w-3/4 md:border ">
+								<h4 class="pb-2 text-2xl text-bold">Commentaires</h4>
+								<div id="comment-1">
+									<div class="flex py-2">
+										<img src="https://randomuser.me/api/portraits/men/97.jpg" class="object-cover w-10 h-10 mr-2 rounded-full" />
+										<div>
+											<p class="text-sm font-semibold text-gray-700"> Mike Sullivan </p>
+											<p class="text-xs font-semibold text-gray-600"> Editeur </p>
+										</div>
+									</div>
+									<p class="py-3 text-gray-700">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									</p>
+								</div>
+								<div id="comment-2">
+									<div class="flex py-2">
+										<img src="https://randomuser.me/api/portraits/women/97.jpg" class="object-cover w-10 h-10 mr-2 rounded-full" />
+										<div>
+											<p class="text-sm font-semibold text-gray-700"> Sofia </p>
+											<p class="text-xs font-semibold text-gray-600"> Editrice </p>
+										</div>
+									</div>
+									<p class="py-3 text-gray-700">
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, nesciunt. Ab, explicabo quam quae at in, vitae harum ut magnam corrupti atque suscipit similique beatae minus! At quibusdam repellat nulla?
+									</p>
+								</div>
+								<div id="comment-3">
+									<div class="flex py-2">
+										<img src="https://randomuser.me/api/portraits/women/57.jpg" class="object-cover w-10 h-10 mr-2 rounded-full" />
+										<div>
+											<p class="text-sm font-semibold text-gray-700"> Emilie Dupont </p>
+											<p class="text-xs font-semibold text-gray-600"> Administratrice </p>
+										</div>
+									</div>
+									<p class="py-3 text-gray-700">
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, nesciunt. Ab, explicabo quam quae at in, vitae harum ut magnam corrupti atque suscipit similique beatae minus! At quibusdam repellat nulla?
+									</p>
+								</div>
+							</div>
+							<div class="flex items-center justify-center mx-auto mt-12 mb-4 ">
+								<form class="w-full px-12 py-12 mb-12 bg-gray-200 lg:w-3/4">
+									<div class="flex flex-wrap mb-6 -mx-3 ">
+										<div>
+											<h2 class="px-4 pt-3 pb-1 text-lg text-gray-800">Laisser un commentaire</h2>
+											<p class="px-4 pb-2 text-sm text-gray-800">Votre email n'est jamais publié</p>
+										</div>
+										<div class="w-full px-3 mt-2 mb-2 md:grid md:grid-cols-9 md:gap-4">
+											<div class="hidden md:block md:col-span-1">
+												<div class="py-2">
+													<img src="https://randomuser.me/api/portraits/women/57.jpg" class="object-cover w-10 h-10 mr-2 rounded-full" />
+													<div>
+														<p class="text-sm font-semibold text-gray-700"> Emilie Dupont </p>
+														<p class="text-xs font-semibold text-gray-600"> Administratrice </p>
+													</div>
+												</div>
+											</div>
+											<div class="md:col-span-6">
+												<label for="body" class="mb-2">Commentaire <span>*</span></label>
+												<textarea class="w-full h-20 px-3 py-2 mb-2 font-medium leading-normal placeholder-gray-700 border border-gray-400 resize-none md:h-60 focus:outline-none focus:bg-white" name="body" placeholder='Saisissez votre commentaire' required></textarea>
+											</div>
+											<div class="md:col-span-2">
+												<div>
+													<label for="name"  class="mb-2">Nom <span>*</span></label>
+													<input class="w-full px-3 py-2 mb-2 font-medium leading-normal placeholder-gray-700 border border-gray-400 resize-none focus:outline-none focus:bg-white" name="name" placeholder='Votre nom' required></input>
+												</div>
+												<div>
+													<label for="name"  class="mb-2">Email <span>*</span></label>
+												<input class="w-full px-3 py-2 mb-2 font-medium leading-normal placeholder-gray-700 border border-gray-400 resize-none focus:outline-none focus:bg-white" name="email" placeholder='exemple@email.com' required></input>
+												</div>
+												<div>
+													<label for="name"  class="mb-2">Site web</label>
+													<input class="w-full px-3 py-2 mb-2 font-medium leading-normal placeholder-gray-700 border border-gray-400 resize-none focus:outline-none focus:bg-white" name="website" placeholder='https://www.exemple.fr'></input>
+												</div>	
+											</div>
+										</div>
+										<div class="grid w-full px-3 justify-items-end md:justify-items-start">
+											<div class="mt-2">
+												<input type='submit' class="hidden px-4 py-1 mr-1 font-medium tracking-wide text-white border md:block bg-primary hover:bg-indigo-500" value='Laisser un commentaire'>
+												<input type='submit' class="px-4 py-1 mr-1 font-medium tracking-wide text-white border md:hidden bg-tertiary hover:bg-orange-400" value='Envoyer'>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</section>
+			<section class="pb-6 pl-12 bg-white ">
+				<button id="scrollToTopBtn" class="font-bold text-primary">Retour en haut de page</button>
+			</section>
+		</main>
+		<footer class="text-white bg-primary">
+			<div class="container p-8 mx-auto bg-grey-lighter" id="footer-top">
+				<div class="mb-4 md:flex">
+					<div class="h-auto sm:w-1/4">
+						<div class="mb-2 text-2xl font-bold cursor-pointer">
+							Films
+						</div>
+						<ul class="leading-normal list-reset">
+							<li class="cursor-pointer hover:text-fourth">
+								<a href="film.html">Chat Noir Chat Blanc</a>
+							</li>
+							<li class="cursor-pointer hover:text-fourth"><a href="film.html">Merveilles à Montfermeil</a></li>
+							<li class="cursor-pointer hover:text-fourth"><a href="film.html">Hotel By the River</a></li>
+							<li class="cursor-pointer hover:text-fourth"><a href="film.html">Les héros ne meurent jamais</a></li>
+						</ul>
+					</div>
+					<div class="h-auto sm:w-1/4">
+						<div class="mb-2 text-2xl font-bold cursor-pointer">
+							<a href="news.html">Actualités</a>
+						</div>
+						<ul class="leading-normal list-reset">
+							<li class="cursor-pointer hover:text-fourth"><a href="article.html">Actu 1</a></li>
+							<li class="cursor-pointer hover:text-fourth"><a href="article.html">Actu 2</a></li>
+							<li class="cursor-pointer hover:text-fourth"><a href="article.html">Actu 3</a></li>
+							<li class="cursor-pointer hover:text-fourth"><a href="article.html">Actu 4</a></li>
+						</ul>
+					</div>
+					<div class="h-auto sm:w-1/4">
+						<div class="mb-2 text-2xl font-bold cursor-pointer">
+							Le festival
+						</div>
+						<ul class="leading-normal list-reset">
+							<li class="cursor-pointer hover:text-fourth"><a href="film.html">Réserver</a></li>
+							<li class="cursor-pointer hover:text-fourth">Lieu</li>
+							<li class="cursor-pointer hover:text-fourth">
+								<a href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="h-auto mt-8 sm:w-1/4 sm:mt-0">
+						<div class="mb-2 text-2xl font-bold cursor-pointer">
+							L'association
+						</div>
+						<ul class="leading-normal list-reset">
+							<li class="cursor-pointer hover:text-fourth"><a href="privacy.html">Politique de confidentialité</a></li>
+							<li class="cursor-pointer hover:text-fourth"><a href="legal.html">Mentions légales</a></li>
+							<li class="cursor-pointer hover:text-fourth"><a href="cgu.html">CGU</a></li>
+							<li class="cursor-pointer hover:text-fourth"><a href="aboutus.html">Qui sommes-nous?</a></li>
+						</ul>
+					</div>
+					<div class="h-auto mt-8 sm:w-1/4 sm:mt-0">
+						<div class="mb-2 text-2xl font-bold">
+							S'inscrire à la newsletter
+						</div>
+						<p class="leading-normal text-gray-200">Adresse email</p>
+						<div class="flex mt-4">
+							<input class="h-auto p-2 text-sm border border-grey-light round text-grey-dark" placeholder="Votre adresse email" type="text">
+							<button class="h-auto p-3 text-white rounded-sm bg-tertiary">S'inscrire</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</nav>
-	</header>
-	<main class="grid w-screen pt-40 justify-items-center">
-        <div class="container">
-            <div class="w-full mx-auto mb-4 md:mb-0">
-                <div class="px-4 lg:px-0">
-                    <h2 class="text-4xl font-semibold leading-tight text-gray-800">
-                    Pellentesque a consectetur velit, ac molestie ipsum. Donec sodales, massa et auctor.
-                    </h2>
-                    <a href="#"class="inline-flex items-center justify-center py-2 mb-2 text-green-700">Cryptocurrency</a>
-                </div>
-                <img src="https://images.unsplash.com/photo-1587614387466-0a72ca909e16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" class="object-cover w-full lg:rounded" style="height: 28em;"/>
-                </div>
-        
-                <div class="flex flex-col lg:flex-row lg:space-x-12">
-        
-                <div class="w-full px-4 mt-12 text-lg leading-relaxed text-gray-700 lg:px-0 lg:w-3/4">
-                    <p class="pb-6">Advantage old had otherwise sincerity dependent additions. It in adapted natural hastily is
-                    justice. Six draw
-                    you him full not mean evil. Prepare garrets it expense windows shewing do an. She projection advantages
-                    resolution son indulgence. Part sure on no long life am at ever. In songs above he as drawn to. Gay was
-                    outlived peculiar rendered led six.</p>
-        
-                    <p class="pb-6">Difficulty on insensible reasonable in. From as went he they. Preference themselves me as
-                    thoroughly
-                    partiality considered on in estimating. Middletons acceptance discovered projecting so is so or. In or
-                    attachment inquietude remarkably comparison at an. Is surrounded prosperous stimulated am me discretion
-                    expression. But truth being state can she china widow. Occasional preference fat remarkably now projecting
-                    uncommonly dissimilar. Sentiments projection particular companions interested do at my delightful. Listening
-                    newspaper in advantage frankness to concluded unwilling.</p>
-        
-                    <p class="pb-6">Adieus except say barton put feebly favour him. Entreaties unpleasant sufficient few pianoforte
-                    discovered
-                    uncommonly ask. Morning cousins amongst in mr weather do neither. Warmth object matter course active law
-                    spring six. Pursuit showing tedious unknown winding see had man add. And park eyes too more him. Simple excuse
-                    active had son wholly coming number add. Though all excuse ladies rather regard assure yet. If feelings so
-                    prospect no as raptures quitting.</p>
-        
-                    <div class="pl-4 mb-6 italic border-l-4 border-gray-500 rounded">
-                    Sportsman do offending supported extremity breakfast by listening. Decisively advantages nor
-                    expression
-                    unpleasing she led met. Estate was tended ten boy nearer seemed. As so seeing latter he should thirty whence.
-                    Steepest speaking up attended it as. Made neat an on be gave show snug tore.
-                    </div>
-        
-                    <p class="pb-6">Exquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me
-                    everything.
-                    Is fine loud deal an rent open give. Find upon and sent spot song son eyes. Do endeavor he differed carriage
-                    is learning my graceful. Feel plan know is he like on pure. See burst found sir met think hopes are marry
-                    among. Delightful remarkably new assistance saw literature mrs favourable.</p>
-        
-                    <h2 class="mt-4 mb-4 text-2xl font-semibold text-gray-800">Uneasy barton seeing remark happen his has</h2>
-        
-                    <p class="pb-6">Guest it he tears aware as. Make my no cold of need. He been past in by my hard. Warmly thrown
-                    oh he common
-                    future. Otherwise concealed favourite frankness on be at dashwoods defective at. Sympathize interested
-                    simplicity at do projecting increasing terminated. As edward settle limits at in.</p>
-        
-                    <p class="pb-6">Dashwood contempt on mr unlocked resolved provided of of. Stanhill wondered it it welcomed oh.
-                    Hundred no
-                    prudent he however smiling at an offence. If earnestly extremity he he propriety something admitting convinced
-                    ye. Pleasant in to although as if differed horrible. Mirth his quick its set front enjoy hoped had there. Who
-                    connection imprudence middletons too but increasing celebrated principles joy. Herself too improve gay winding
-                    ask expense are compact. New all paid few hard pure she.</p>
-        
-                    <p class="pb-6">Breakfast agreeable incommode departure it an. By ignorant at on wondered relation. Enough at
-                    tastes really
-                    so cousin am of. Extensive therefore supported by extremity of contented. Is pursuit compact demesne invited
-                    elderly be. View him she roof tell her case has sigh. Moreover is possible he admitted sociable concerns. By
-                    in cold no less been sent hard hill.</p>
-        
-                    <p class="pb-6">Detract yet delight written farther his general. If in so bred at dare rose lose good. Feel and
-                    make two real
-                    miss use easy. Celebrated delightful an especially increasing instrument am. Indulgence contrasted sufficient
-                    to unpleasant in in insensible favourable. Latter remark hunted enough vulgar say man. Sitting hearted on it
-                    without me.</p>
-        
-                </div>
-        
-                <div class="w-full max-w-screen-sm m-auto mt-12 lg:w-1/4">
-                    <div class="p-4 border-t border-b md:border md:rounded">
-                        <div class="flex py-2">
-                            <img src="https://randomuser.me/api/portraits/men/97.jpg" class="object-cover w-10 h-10 mr-2 rounded-full" />
-                        <div>
-                            <p class="text-sm font-semibold text-gray-700"> Mike Sullivan </p>
-                            <p class="text-xs font-semibold text-gray-600"> Editor </p>
-                        </div>
-                    </div>
-                    <p class="py-3 text-gray-700">
-                    Mike writes about technology
-                    Yourself required no at thoughts delicate landlord it be. Branched dashwood do is whatever it.
-                    </p>
-                    <button class="flex items-center justify-center w-full px-2 py-1 text-gray-100 bg-green-700 rounded">
-                        Follow 
-                        <i class='ml-2 bx bx-user-plus' ></i>
-                    </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <section class="pb-6 pl-12 bg-white ">
-			<button id="scrollToTopBtn" class="font-bold text-primary">Retour en haut de page</button>
-		</section>
-	</main>
-	<footer class="text-white bg-primary">
-		<div class="container p-8 mx-auto bg-grey-lighter" id="footer-top">
-			<div class="mb-4 md:flex">
-				<div class="h-auto sm:w-1/4">
-					<div class="mb-2 text-2xl font-bold cursor-pointer">
-						Films
+			<div class="grid grid-cols-1 grid-rows-2 pb-6 md:grid-cols-2 md:grid-rows-1 md:mx-60 md:justify-items-stretch place-items-center" id="footer-bottom">
+				<div class="md:pb-12 md:-ml-8" id="escadenca">
+					<img alt="logo Escadença coccinelle" class="max-h-44 max-w-44" src="assets/images/Bloc-marque.png">
+					<div class="mt-2" id="agency">
+						<p class="ml-6 text-lg font-bold">Agence Escadença Media</p>
 					</div>
-					<ul class="leading-normal list-reset">
-						<li class="cursor-pointer hover:text-fourth">
-							<a href="film.html">Chat Noir Chat Blanc</a>
+				</div>
+				<div class="grid grid-cols-1 mt-20 max-h-36 justify-items-end" id="social">
+					<ul class="flex text-center text-white">
+						<li class="p-2 cursor-pointer">
+							<svg class="text-white fill-current" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path>
+							</svg>
 						</li>
-						<li class="cursor-pointer hover:text-fourth"><a href="film.html">Merveilles à Montfermeil</a></li>
-						<li class="cursor-pointer hover:text-fourth"><a href="film.html">Hotel By the River</a></li>
-						<li class="cursor-pointer hover:text-fourth"><a href="film.html">Les héros ne meurent jamais</a></li>
-					</ul>
-				</div>
-				<div class="h-auto sm:w-1/4">
-					<div class="mb-2 text-2xl font-bold cursor-pointer">
-						<a href="news.html">Actualités</a>
-					</div>
-					<ul class="leading-normal list-reset">
-						<li class="cursor-pointer hover:text-fourth">Actu 1</li>
-						<li class="cursor-pointer hover:text-fourth">Actu 2</li>
-						<li class="cursor-pointer hover:text-fourth">Actu 3</li>
-						<li class="cursor-pointer hover:text-fourth">Actu 4</li>
-					</ul>
-				</div>
-				<div class="h-auto sm:w-1/4">
-					<div class="mb-2 text-2xl font-bold cursor-pointer">
-						Le festival
-					</div>
-					<ul class="leading-normal list-reset">
-						<li class="cursor-pointer hover:text-fourth"><a href="film.html">Réserver</a></li>
-						<li class="cursor-pointer hover:text-fourth">Lieu</li>
-						<li class="cursor-pointer hover:text-fourth">
-							<a href="contact.html">Contact</a>
+						<li class="p-2 cursor-pointer">
+							<svg class="text-white fill-current" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path cliprule="evenodd" d="M21.231 0h-18.462c-1.529 0-2.769 1.24-2.769 2.769v18.46c0 1.531 1.24 2.771 2.769 2.771h18.463c1.529 0 2.768-1.24 2.768-2.771v-18.46c0-1.529-1.239-2.769-2.769-2.769zm-9.231 7.385c2.549 0 4.616 2.065 4.616 4.615 0 2.549-2.067 4.616-4.616 4.616s-4.615-2.068-4.615-4.616c0-2.55 2.066-4.615 4.615-4.615zm9 12.693c0 .509-.413.922-.924.922h-16.152c-.511 0-.924-.413-.924-.922v-10.078h1.897c-.088.315-.153.64-.2.971-.05.337-.081.679-.081 1.029 0 4.079 3.306 7.385 7.384 7.385s7.384-3.306 7.384-7.385c0-.35-.031-.692-.081-1.028-.047-.331-.112-.656-.2-.971h1.897v10.077zm0-13.98c0 .509-.413.923-.924.923h-2.174c-.511 0-.923-.414-.923-.923v-2.175c0-.51.412-.923.923-.923h2.174c.511 0 .924.413.924.923v2.175z" fillrule="evenodd"></path>
+							</svg>
+						</li>
+						<li class="p-2 cursor-pointer">
+							<svg class="text-white fill-current" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+							</svg>
 						</li>
 					</ul>
-				</div>
-				<div class="h-auto mt-8 sm:w-1/4 sm:mt-0">
-					<div class="mb-2 text-2xl font-bold cursor-pointer">
-						L'association
-					</div>
-					<ul class="leading-normal list-reset">
-						<li class="cursor-pointer hover:text-fourth"><a href="privacy.html">Politique de confidentialité</a></li>
-						<li class="cursor-pointer hover:text-fourth"><a href="legal.html">Mentions légales</a></li>
-						<li class="cursor-pointer hover:text-fourth"><a href="cgu.html">CGU</a></li>
-						<li class="cursor-pointer hover:text-fourth"><a href="aboutus.html">Qui sommes-nous?</a></li>
-					</ul>
-				</div>
-				<div class="h-auto mt-8 sm:w-1/4 sm:mt-0">
-					<div class="mb-2 text-2xl font-bold">
-						S'inscrire à la newsletter
-					</div>
-					<p class="leading-normal text-gray-200">Adresse email</p>
-					<div class="flex mt-4">
-						<input class="h-auto p-2 text-sm border border-grey-light round text-grey-dark" placeholder="Votre adresse email" type="text">
-                        <button class="h-auto p-3 text-white rounded-sm bg-tertiary">S'inscrire</button>
-					</div>
+					<p class="text-2xl font-bold">Films de Plein Air</p>
+					<p><span>01 02 03 04 05</span></p>
+					<a class="block hover:text-indigo-600" href="mailto:">contact@etoilesettoiles.com<span class="p-1 text-xs"></span></a>
 				</div>
 			</div>
-		</div>
-		<div class="grid grid-cols-1 grid-rows-2 pb-6 md:grid-cols-2 md:grid-rows-1 md:mx-60 md:justify-items-stretch place-items-center" id="footer-bottom">
-			<div class="md:pb-12 md:-ml-8" id="escadenca">
-				<img alt="logo Escadença coccinelle" class="max-h-44 max-w-44" src="assets/images/Bloc-marque.png">
-				<div class="mt-2" id="agency">
-					<p class="ml-6 text-lg font-bold">Agence Escadença Media</p>
-				</div>
-			</div>
-			<div class="grid grid-cols-1 mt-20 max-h-36 justify-items-end" id="social">
-				<ul class="flex text-center text-white">
-					<li class="p-2 cursor-pointer">
-						<svg class="text-white fill-current" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-						<path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path></svg>
-					</li>
-					<li class="p-2 cursor-pointer">
-						<svg class="text-white fill-current" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-						<path cliprule="evenodd" d="M21.231 0h-18.462c-1.529 0-2.769 1.24-2.769 2.769v18.46c0 1.531 1.24 2.771 2.769 2.771h18.463c1.529 0 2.768-1.24 2.768-2.771v-18.46c0-1.529-1.239-2.769-2.769-2.769zm-9.231 7.385c2.549 0 4.616 2.065 4.616 4.615 0 2.549-2.067 4.616-4.616 4.616s-4.615-2.068-4.615-4.616c0-2.55 2.066-4.615 4.615-4.615zm9 12.693c0 .509-.413.922-.924.922h-16.152c-.511 0-.924-.413-.924-.922v-10.078h1.897c-.088.315-.153.64-.2.971-.05.337-.081.679-.081 1.029 0 4.079 3.306 7.385 7.384 7.385s7.384-3.306 7.384-7.385c0-.35-.031-.692-.081-1.028-.047-.331-.112-.656-.2-.971h1.897v10.077zm0-13.98c0 .509-.413.923-.924.923h-2.174c-.511 0-.923-.414-.923-.923v-2.175c0-.51.412-.923.923-.923h2.174c.511 0 .924.413.924.923v2.175z" fillrule="evenodd"></path></svg>
-					</li>
-					<li class="p-2 cursor-pointer">
-						<svg class="text-white fill-current" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-						<path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
-					</li>
-				</ul>
-				<p class="text-2xl font-bold">Films de Plein Air</p>
-				<p><span>01 02 03 04 05</span></p><a class="block hover:text-indigo-600" href="mailto:">contact@etoilesettoiles.com<span class="p-1 text-xs"></span></a>
-			</div>
-		</div>
-	</footer>
-	<script src="functions.js" type="text/javascript">
-	</script>
-</body>
+		</footer>
+		<script src="functions.js" type="text/javascript"></script>
+	</body>
 </html>
