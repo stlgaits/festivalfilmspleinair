@@ -11,4 +11,4 @@ Autres livrables :
   - arborescence
   - impact mapping
  - wireframes mobile & desktop
- 
+ Cette maquette a été réalisée avec le framework TailwindCSS
